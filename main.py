@@ -47,3 +47,7 @@ if __name__ == "__main__":
                                                                                                  "energetic"])
     for_children_and_christmas_and_energetic.select_random_subgroup_based_on_length().\
         print_list_of_pieces("For children, christmas and energetic", sort=by.TITLE)
+
+    not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
+    not_good_enough_pieces.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Not good enough pieces")
