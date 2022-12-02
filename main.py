@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     energetic_sorted_duration = original_piece_list.get_pieces(with_tags_and_tags="energetic")
     energetic_sorted_duration.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Energetic", sort=by.DURATION)
+        print_list_of_pieces(title="Energetic sorted by duration", sort=by.DURATION)
 
     christmas_songs = original_piece_list.get_pieces(with_tags_and_tags="christmas")
     christmas_songs.select_random_subgroup_based_on_length().\
@@ -51,3 +51,7 @@ if __name__ == "__main__":
     not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
     not_good_enough_pieces.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Not good enough pieces")
+
+    pieces_to_practice_weekly = original_piece_list.get_pieces(with_tags_or_tags=["christmas", "not good enough"])
+    pieces_to_practice_weekly.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Pieces to practice weekly")
