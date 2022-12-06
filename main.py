@@ -42,11 +42,9 @@ if __name__ == "__main__":
     for_children.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="For children")
 
-    for_children_and_christmas_and_energetic = original_piece_list.get_pieces(with_tags_or_tags=["for children",
-                                                                                                 "christmas",
-                                                                                                 "energetic"])
-    for_children_and_christmas_and_energetic.select_random_subgroup_based_on_length().\
-        print_list_of_pieces("For children, christmas and energetic", sort=by.TITLE)
+    for_children_and_christmas = original_piece_list.get_pieces(with_tags_or_tags=["for children", "christmas"])
+    for_children_and_christmas.select_random_subgroup_based_on_length().\
+        print_list_of_pieces("For children and christmas", sort=by.TITLE)
 
     not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
     not_good_enough_pieces.select_random_subgroup_based_on_length().\
