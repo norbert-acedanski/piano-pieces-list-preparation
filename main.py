@@ -46,6 +46,10 @@ if __name__ == "__main__":
     for_children_and_christmas.select_random_subgroup_based_on_length().\
         print_list_of_pieces("For children and christmas", sort=by.TITLE)
 
+    happy_songs = original_piece_list.get_pieces(with_tags_and_tags="happy")
+    happy_songs.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Happy songs")
+
     not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
     not_good_enough_pieces.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Not good enough pieces")
