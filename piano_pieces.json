@@ -175,4 +175,7 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Frank Sinatra", "title": "Have yourself a merry little christmas",
   "duration": {"minutes": 2, "seconds": 12}, "tags": ["song", "christmas"],
-  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}}]}
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
+ {"composer/performer": "Placide Cappeau", "title": "O Holy Night",
+  "duration":  {"minutes": 5, "seconds": 47}, "tags": ["song", "christmas"],
+  "channel state": {"old flat": [], "new flat": []}}]}
