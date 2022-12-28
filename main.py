@@ -56,4 +56,4 @@ if __name__ == "__main__":
 
     pieces_to_practice_weekly = original_piece_list.get_pieces(with_tags_or_tags=["christmas", "not good enough"])
     pieces_to_practice_weekly.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Pieces to practice weekly")
+        print_list_of_pieces(title="Pieces to practice weekly", sort=by.COMPOSER_PERFORMER)
