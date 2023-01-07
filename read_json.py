@@ -1,8 +1,8 @@
+import codecs
 import json
 
 
 def read_json(file_path: str) -> list:
-    json_file = open(file_path, "r")
-    file_content = json.load(json_file)
-    json_file.close()
+    with codecs.open(file_path, "r", "utf-8") as json_file:
+        file_content = json.load(json_file)
     return file_content["all piano pieces"]
