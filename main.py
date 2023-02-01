@@ -10,7 +10,7 @@ if __name__ == "__main__":
     original_piece_list.print_all_tags()
     original_piece_list.print_list_of_pieces(title="All pieces")
 
-    pieces_based_on_duration = original_piece_list.get_pieces(without_tags="not good enough")
+    pieces_based_on_duration = original_piece_list.get_pieces(without_tags=["not good enough", "christmas"])
     pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=3*60 - 20).\
         print_list_of_pieces(title="Pieces for 2h 40m")
 
