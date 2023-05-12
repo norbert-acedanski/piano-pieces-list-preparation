@@ -181,4 +181,7 @@
   "channel state": {"new flat": []}},
  {"composer/performer": "Michael Giacchino", "title": "Bundle of Joy",
   "duration":  {"minutes": 2, "seconds": 14}, "tags": ["sad", "for children", "soundtrack"],
-  "from": {"movie": "Inside Out"}, "channel state": {"new flat": []}}]}
+  "from": {"movie": "Inside Out"}, "channel state": {"new flat": []}},
+ {"composer/performer": "Debussy", "title": "Arabesque No.1",
+  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "fresh"],
+  "channel state": {"old flat": [], "new flat": []}}]}
