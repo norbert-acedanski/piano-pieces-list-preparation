@@ -26,17 +26,13 @@ if __name__ == "__main__":
     classical.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Classical")
 
-    classical_sorted_title = original_piece_list.get_pieces(with_tags_and_tags="classical", without_tags="not good enough")
-    classical_sorted_title.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Classical sorted by title reversed", sort=by.TITLE, reverse=True)
-
     energetic = original_piece_list.get_pieces(with_tags_and_tags="energetic")
     energetic.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Energetic")
 
-    energetic_sorted_duration = original_piece_list.get_pieces(with_tags_and_tags="energetic")
-    energetic_sorted_duration.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Energetic sorted by duration", sort=by.DURATION)
+    songs_sorted_duration = original_piece_list.get_pieces(with_tags_and_tags="song")
+    songs_sorted_duration.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Songs sorted by duration", sort=by.DURATION)
 
     christmas_songs = original_piece_list.get_pieces(with_tags_and_tags="christmas")
     christmas_songs.select_random_subgroup_based_on_length().\
@@ -53,6 +49,10 @@ if __name__ == "__main__":
     happy_songs = original_piece_list.get_pieces(with_tags_and_tags="happy")
     happy_songs.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Happy songs")
+
+    sad_pieces_sorted_title = original_piece_list.get_pieces(with_tags_and_tags="sad", without_tags="not good enough")
+    sad_pieces_sorted_title.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Sad pieces sorted by title reversed", sort=by.TITLE, reverse=True)
 
     not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
     not_good_enough_pieces.select_random_subgroup_based_on_length().\
