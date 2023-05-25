@@ -165,7 +165,7 @@
   "duration": {"minutes": 2, "seconds": 22}, "tags": ["classical", "sad"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Ludovico Einaudi", "title": "The water diviner",
-  "duration": {"minutes": 7, "seconds": 20}, "tags": ["classical", "sad"],
+  "duration": {"minutes": 7, "seconds": 20}, "tags": ["classical", "sad", "not good enough"],
   "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Gershwin", "title": "Summertime",
   "duration": {"minutes": 3, "seconds": 47}, "tags": ["song", "energetic"],
@@ -183,5 +183,5 @@
   "duration":  {"minutes": 2, "seconds": 14}, "tags": ["sad", "for children", "soundtrack"],
   "from": {"movie": "Inside Out"}, "channel state": {"new flat": []}},
  {"composer/performer": "Debussy", "title": "Arabesque No.1",
-  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "fresh"],
+  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy"],
   "channel state": {"old flat": [], "new flat": []}}]}
