@@ -165,7 +165,7 @@
   "duration": {"minutes": 2, "seconds": 22}, "tags": ["classical", "sad"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Ludovico Einaudi", "title": "The water diviner",
-  "duration": {"minutes": 7, "seconds": 20}, "tags": ["classical", "sad", "not good enough"],
+  "duration": {"minutes": 7, "seconds": 20}, "tags": ["classical", "sad"],
   "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Gershwin", "title": "Summertime",
   "duration": {"minutes": 3, "seconds": 47}, "tags": ["song", "energetic"],
