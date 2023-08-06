@@ -179,9 +179,6 @@
  {"composer/performer": "Placide Cappeau", "title": "O Holy Night",
   "duration":  {"minutes": 5, "seconds": 47}, "tags": ["song", "christmas"],
   "channel state": {"new flat": []}},
- {"composer/performer": "Michael Giacchino", "title": "Bundle of Joy",
-  "duration":  {"minutes": 2, "seconds": 14}, "tags": ["sad", "for children", "soundtrack"],
-  "from": {"movie": "Inside Out"}, "channel state": {"new flat": []}},
  {"composer/performer": "Debussy", "title": "Arabesque No.1",
   "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy"],
   "channel state": {"old flat": [], "new flat": []}}]}
