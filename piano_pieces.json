@@ -78,7 +78,7 @@
   "duration": {"minutes": 3, "seconds": 11}, "tags": ["song"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Leonard Cohen", "title": "Hallelujah",
-  "duration": {"minutes": 0, "seconds": 58}, "tags": ["song", "soundtrack"], 
+  "duration": {"minutes": 0, "seconds": 58}, "tags": ["song", "soundtrack", "not good enough"],
   "from": {"movie": "Shrek"}, "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Rihanna", "title": "Stay",
   "duration": {"minutes": 3, "seconds": 33}, "tags": ["song", "sad"],
