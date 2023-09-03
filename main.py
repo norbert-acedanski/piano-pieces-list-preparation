@@ -50,8 +50,8 @@ if __name__ == "__main__":
     happy_songs.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Happy songs")
 
-    energetic_or_for_children_or_happy_songs = original_piece_list.get_pieces(with_tags_or_tags=
-                                                                              ["energetic", "for children", "happy"])
+    energetic_or_for_children_or_happy_songs = original_piece_list.get_pieces(
+        with_tags_or_tags=["energetic", "for children", "happy"], without_tags="christmas")
     energetic_or_for_children_or_happy_songs.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Energetic, for children or happy songs")
 
