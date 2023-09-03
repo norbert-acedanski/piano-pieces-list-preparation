@@ -67,3 +67,9 @@ if __name__ == "__main__":
                                                                                   "fresh"])
     pieces_to_practice_weekly.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Pieces to practice weekly", sort=by.COMPOSER_PERFORMER)
+
+    old_flat_left_pieces = [piece for piece in original_piece_list._piano_list
+                            if set(piece["channel state"].get("old flat", {})) != {"recorded", "uploaded"}]
+    pieces_from_old_flat_left_to_upload = PianoList(old_flat_left_pieces)
+    pieces_from_old_flat_left_to_upload.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Pieces left to upload from the old flat")
