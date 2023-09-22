@@ -46,7 +46,7 @@
   "from": {"tv series": "Rick and Morty"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Judy Kuhn", "title": "Colors of the wind",
   "duration": {"minutes": 3, "seconds": 33}, "tags": ["soundtrack", "song", "for children"], 
-  "from": {"movie": "Pocahontas"}, "channel state": {"old flat": ["recorded"], "new flat": []}},
+  "from": {"movie": "Pocahontas"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "J.R.R. Tolkien - The Dwarfs", "title": "Misty Mountains",
   "duration": {"minutes": 1, "seconds": 35}, "tags": ["soundtrack", "song", "sad"],
   "from": {"book": "The Hobbit", "movie": "The Hobbit"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
@@ -181,4 +181,7 @@
   "channel state": {"new flat": []}},
  {"composer/performer": "Debussy", "title": "Arabesque No.1",
   "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic"],
-  "channel state": {"old flat": [], "new flat": []}}]}
+  "channel state": {"old flat": [], "new flat": []}},
+ {"composer/performer": "Ron Jones", "title": "The Fairly OddParents Theme",
+  "duration": {"minutes": 0, "seconds": 58}, "tags": ["happy", "energetic", "for children", "song", "soundtrack"],
+  "from": {"tv series": "The Fairly OddParents"}, "channel state": {"new flat": []}}]}
