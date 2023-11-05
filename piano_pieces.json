@@ -124,7 +124,7 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "George Michael", "title": "Careless Whisper",
   "duration": {"minutes": 4, "seconds": 42}, "tags": ["song", "sad"],
-  "channel state": {"old flat": ["recorded"], "new flat": []}},
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Icona Pop", "title": "I love it",
   "duration": {"minutes": 2, "seconds": 33}, "tags": ["song", "energetic", "happy"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
