@@ -8,7 +8,7 @@ if __name__ == "__main__":
     original_piece_list.print_all_composers_performers()
     original_piece_list.print_all_titles()
     original_piece_list.print_all_tags()
-    original_piece_list.print_list_of_pieces(title="All pieces")
+    original_piece_list.select_random_subgroup_based_on_length().print_list_of_pieces(title="All pieces")
 
     duration = {"hours": 2, "minutes": 40}
     pieces_based_on_duration = original_piece_list.get_pieces(without_tags=["not good enough", "christmas"])
