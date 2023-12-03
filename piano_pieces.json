@@ -160,7 +160,7 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Ludovico Einaudi", "title": "Experience",
   "duration": {"minutes": 6, "seconds": 17}, "tags": ["classical", "sad", "energetic"],
-  "channel state": {"old flat": ["recorded"], "new flat": []}},
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Per Magnusson", "title": "Me and Julia",
   "duration": {"minutes": 2, "seconds": 22}, "tags": ["classical", "sad"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
