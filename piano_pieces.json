@@ -118,7 +118,7 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "ABBA", "title": "Dancing Queen",
   "duration": {"minutes": 3, "seconds": 48}, "tags": ["song", "energetic", "happy"],
-  "channel state": {"old flat": ["recorded"], "new flat": []}},
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Muse", "title": "Feeling good",
   "duration": {"minutes": 3, "seconds": 18}, "tags": ["song", "energetic"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
