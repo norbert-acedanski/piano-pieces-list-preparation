@@ -170,6 +170,12 @@
  {"composer/performer": "Gershwin", "title": "Summertime",
   "duration": {"minutes": 3, "seconds": 47}, "tags": ["song", "energetic"],
   "channel state": {"old flat": ["recorded"], "new flat": []}},
+ {"composer/performer": "Debussy", "title": "Arabesque No.1",
+  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic"],
+  "channel state": {"old flat": [], "new flat": []}},
+ {"composer/performer": "Ron Jones", "title": "The Fairly OddParents Theme",
+  "duration": {"minutes": 0, "seconds": 58}, "tags": ["happy", "energetic", "for children", "song", "soundtrack"],
+  "from": {"tv series": "The Fairly OddParents"}, "channel state": {"new flat": []}},
  {"composer/performer": "Eartha Kitt", "title": "Santa Baby",
   "duration": {"minutes": 2, "seconds": 42}, "tags": ["song", "christmas", "happy"],
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
@@ -178,10 +184,5 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Placide Cappeau", "title": "O Holy Night",
   "duration":  {"minutes": 5, "seconds": 47}, "tags": ["song", "christmas"],
-  "channel state": {"new flat": []}},
- {"composer/performer": "Debussy", "title": "Arabesque No.1",
-  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic"],
-  "channel state": {"old flat": [], "new flat": []}},
- {"composer/performer": "Ron Jones", "title": "The Fairly OddParents Theme",
-  "duration": {"minutes": 0, "seconds": 58}, "tags": ["happy", "energetic", "for children", "song", "soundtrack"],
-  "from": {"tv series": "The Fairly OddParents"}, "channel state": {"new flat": []}}]}
+  "channel state": {"new flat": []}}
+]}
