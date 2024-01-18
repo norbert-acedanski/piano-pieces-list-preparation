@@ -184,5 +184,8 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Placide Cappeau", "title": "O Holy Night",
   "duration":  {"minutes": 5, "seconds": 47}, "tags": ["song", "christmas"],
+  "channel state": {"new flat": []}},
+ {"composer/performer": "Bobby Helms", "title": "Jingle Bell Rock",
+  "duration":  {"minutes": 2, "seconds": 5}, "tags": ["song", "christmas", "happy", "energetic"],
   "channel state": {"new flat": []}}
 ]}
