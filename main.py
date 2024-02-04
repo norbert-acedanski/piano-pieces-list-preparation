@@ -74,6 +74,12 @@ if __name__ == "__main__":
     pieces_from_old_flat_left_to_upload.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Pieces left to upload from the old flat")
 
+    new_flat_left_pieces = [piece for piece in original_piece_list._piano_list
+                            if set(piece["channel state"].get("new flat", {})) in [{"recorded"}, set()]]
+    pieces_from_new_flat_left_to_upload = PianoList(new_flat_left_pieces)
+    pieces_from_new_flat_left_to_upload.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Pieces left to upload from the new flat")
+
     pieces_not_recorded = [piece for piece in original_piece_list._piano_list
                            if "recorded" not in set(piece["channel state"].get("old flat", {}))
                            and "recorded" not in set(piece["channel state"]["new flat"])]
