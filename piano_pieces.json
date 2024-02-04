@@ -169,7 +169,7 @@
   "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Gershwin", "title": "Summertime",
   "duration": {"minutes": 3, "seconds": 47}, "tags": ["song", "energetic"],
-  "channel state": {"old flat": ["recorded"], "new flat": []}},
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Debussy", "title": "Arabesque No.1",
   "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic"],
   "channel state": {"old flat": [], "new flat": []}},
