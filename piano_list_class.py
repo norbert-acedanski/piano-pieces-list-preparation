@@ -8,7 +8,8 @@ from typing import List, Dict, Union, Optional, Tuple, Set
 from sorting_enum_class import by
 
 PIANO_LIST_OF_PIECES = List[Dict[str, Union[str, Dict[str, Union[str, List[str], int]], List[str]]]]
-OPTIONAL_STRING_OR_ITERABLE = Optional[Union[str, List[str], Tuple[str], Set[str]]]
+STRING_OR_ITERABLE = Optional[Union[str, List[str], Tuple[str], Set[str]]]
+INT_OR_ITERABLE = Optional[Union[int, List[int], Tuple[int], Set[int]]]
 
 
 class PianoList:
@@ -35,18 +36,19 @@ class PianoList:
     def get_total_duration(self) -> int:
         return sum(piece["duration"]["minutes"]*60 + piece["duration"]["seconds"] for piece in self._piano_list)
 
-    def get_pieces(self, from_composers: OPTIONAL_STRING_OR_ITERABLE = None,
-                         without_composers: OPTIONAL_STRING_OR_ITERABLE = None,
-                         with_titles: OPTIONAL_STRING_OR_ITERABLE = None,
-                         without_titles: OPTIONAL_STRING_OR_ITERABLE = None,
+    def get_pieces(self, from_composers: Optional[STRING_OR_ITERABLE] = None,
+                         without_composers: Optional[STRING_OR_ITERABLE] = None,
+                         with_titles: Optional[STRING_OR_ITERABLE] = None,
+                         without_titles: Optional[STRING_OR_ITERABLE] = None,
                          longer_than: Optional[Union[int, float]] = None,
                          shorter_than: Optional[Union[int, float]] = None,
-                         with_tags_and_tags: OPTIONAL_STRING_OR_ITERABLE = None,
-                         with_tags_or_tags: OPTIONAL_STRING_OR_ITERABLE = None,
-                         without_tags: OPTIONAL_STRING_OR_ITERABLE = None) -> PianoList:
+                         with_tags_and_tags: Optional[STRING_OR_ITERABLE] = None,
+                         with_tags_or_tags: Optional[STRING_OR_ITERABLE] = None,
+                         without_tags: Optional[STRING_OR_ITERABLE] = None,
+                         with_difficulty: Optional[INT_OR_ITERABLE] = None) -> PianoList:
         if all(parameter is None for parameter in [from_composers, without_composers, with_titles, without_titles,
                                                    longer_than, shorter_than, with_tags_and_tags, with_tags_or_tags,
-                                                   without_tags]):
+                                                   without_tags, with_difficulty]):
             raise ValueError("Provide at least one argument!")
         reduced_list_of_pieces = [piece for piece in self._piano_list]  # To copy the list
         if from_composers is not None:
@@ -72,16 +74,18 @@ class PianoList:
         if without_tags is not None:
             reduced_list_of_pieces = self._filter_or_tags(list_of_pieces=reduced_list_of_pieces, tags=without_tags,
                                                           without=True)
+        if with_difficulty is not None:
+            reduced_list_of_pieces = self._filter_difficulty(list_of_pieces=reduced_list_of_pieces, difficulty=with_difficulty)
         return PianoList(reduced_list_of_pieces)
 
-    def _filter_composers(self, list_of_pieces: PIANO_LIST_OF_PIECES, composers: Union[str, List[str], Tuple[str], Set[str]],
+    def _filter_composers(self, list_of_pieces: PIANO_LIST_OF_PIECES, composers: STRING_OR_ITERABLE,
                           without: bool = False) -> PIANO_LIST_OF_PIECES:
         composers = [composers] if isinstance(composers, str) else composers
         if without:
             return [piece for piece in list_of_pieces if piece["composer/performer"] not in composers]
         return [piece for piece in list_of_pieces if piece["composer/performer"] in composers]
 
-    def _filter_titles(self, list_of_pieces: PIANO_LIST_OF_PIECES, titles: Union[str, List[str], Tuple[str], Set[str]],
+    def _filter_titles(self, list_of_pieces: PIANO_LIST_OF_PIECES, titles: STRING_OR_ITERABLE,
                        without: bool = False) -> PIANO_LIST_OF_PIECES:
         titles = [titles] if isinstance(titles, str) else titles
         if without:
@@ -96,17 +100,22 @@ class PianoList:
         return [piece for piece in list_of_pieces
                 if piece["duration"]["minutes"]*60 + piece["duration"]["seconds"] <= duration*60]
 
-    def _filter_or_tags(self, list_of_pieces: PIANO_LIST_OF_PIECES, tags: Union[str, List[str], Tuple[str], Set[str]],
+    def _filter_or_tags(self, list_of_pieces: PIANO_LIST_OF_PIECES, tags: STRING_OR_ITERABLE,
                         without: bool = False) -> PIANO_LIST_OF_PIECES:
         tags = [tags] if isinstance(tags, str) else tags
         if not without:
             return [piece for piece in list_of_pieces if set(piece["tags"]) & set(tags)]
         return [piece for piece in list_of_pieces if not set(piece["tags"]) & set(tags)]
 
-    def _filter_and_tags(self, list_of_pieces: PIANO_LIST_OF_PIECES, tags: Union[str, List[str], Tuple[str], Set[str]])\
+    def _filter_and_tags(self, list_of_pieces: PIANO_LIST_OF_PIECES, tags: STRING_OR_ITERABLE)\
             -> PIANO_LIST_OF_PIECES:
         tags = [tags] if isinstance(tags, str) else tags
         return [piece for piece in list_of_pieces if set(tags).issubset(set(piece["tags"]))]
+    
+    def _filter_difficulty(self, list_of_pieces: PIANO_LIST_OF_PIECES, difficulty: INT_OR_ITERABLE) \
+            -> PIANO_LIST_OF_PIECES:
+        difficulty = [difficulty] if isinstance(difficulty, int) else difficulty
+        return [piece for piece in list_of_pieces if piece["difficulty"] in difficulty]
 
     def select_random_subgroup_based_on_duration(self, minimum_duration: Union[int, float]) -> PianoList:
         if minimum_duration < 0:
