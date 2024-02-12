@@ -55,6 +55,11 @@ if __name__ == "__main__":
     energetic_or_for_children_or_happy_songs.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Energetic, for children or happy songs")
 
+    romantic_or_energetic_songs = original_piece_list.get_pieces(
+        with_tags_or_tags="romantic", without_tags=["not good enough", "christmas"])
+    romantic_or_energetic_songs.select_random_subgroup_based_on_length().\
+        print_list_of_pieces(title="Romantic songs")
+
     sad_pieces_sorted_title = original_piece_list.get_pieces(with_tags_and_tags="sad", without_tags="not good enough")
     sad_pieces_sorted_title.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Sad pieces sorted by title reversed", sort=by.TITLE, reverse=True)
