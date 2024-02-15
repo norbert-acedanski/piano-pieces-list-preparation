@@ -171,7 +171,7 @@
   "duration": {"minutes": 3, "seconds": 47}, "tags": ["song", "energetic"], "difficulty": 3,
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Debussy", "title": "Arabesque No.1",
-  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic"], "difficulty": 3,
+  "duration": {"minutes": 4, "seconds": 42}, "tags": ["classical", "happy", "energetic", "romantic"], "difficulty": 3,
   "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Ron Jones", "title": "The Fairly OddParents Theme",
   "duration": {"minutes": 0, "seconds": 58}, "tags": ["happy", "energetic", "for children", "song", "soundtrack"], "difficulty": 4,
