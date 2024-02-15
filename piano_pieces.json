@@ -70,7 +70,7 @@
   "from": {"game": "Minecraft"}, "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Justin Hurwitz", "title": "City of stars",
   "duration": {"minutes": 2, "seconds": 5}, "tags": ["soundtrack", "song", "sad", "romantic"], "difficulty": 1,
-  "from": {"movie": "La La Land"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
+  "from": {"movie": "La La Land"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded"]}},
  {"composer/performer": "Katy Perry", "title": "Teenage dream",
   "duration": {"minutes": 3, "seconds": 37}, "tags": ["song", "happy"], "difficulty": 1,
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
