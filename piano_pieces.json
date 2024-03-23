@@ -85,7 +85,7 @@
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Hozier", "title": "Take me to church",
   "duration": {"minutes": 3, "seconds": 31}, "tags": ["song", "romantic"], "difficulty": 2,
-  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
+  "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded"]}},
  {"composer/performer": "Queen", "title": "Bohemian Rhapsody",
   "duration": {"minutes": 5, "seconds": 58}, "tags": ["song", "energetic"], "difficulty": 4,
   "channel state": {"old flat": [], "new flat": []}},
