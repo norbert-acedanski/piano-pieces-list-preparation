@@ -156,7 +156,8 @@ class PianoList:
         for tag_number, tag in enumerate(self.tags, 1):
             print(f"{tag_number}. {tag}")
 
-    def print_list_of_pieces(self, title: str = None, sort: by = None, reverse: bool = False) -> None:
+    def print_list_of_pieces(self, title: str = None, sort: by = None, reverse: bool = False,
+                             print_difficulty: bool = False) -> None:
         performer_composer_str = "PERFORMER/COMPOSER"
         title_str = "TITLE"
         duration_str = "DURATION"
@@ -167,13 +168,14 @@ class PianoList:
         if title is not None:
             print(f"{title}:")
         print(f"NR| {performer_composer_str.ljust(performer_composer_just_length)} | "
-              f"{title_str.ljust(title_just_length)} | {duration_str}")
-        print("-"*(performer_composer_just_length + title_just_length + len(duration_str) + 10))
+              f"{title_str.ljust(title_just_length)} | {duration_str}" + (" | DIFFICULTY" if print_difficulty else ""))
+        print("-"*(performer_composer_just_length + title_just_length + len(duration_str) + 10 + (13 if print_difficulty else 0)))
         for piece_number, piece in enumerate(list_of_pieces, 1):
             print(f"{str(piece_number).rjust(2)}| "
                   f"{piece['composer/performer'].ljust(performer_composer_just_length)} | "
-                  f"{piece['title'].ljust(title_just_length)} | "
-                  f"{piece['duration']['minutes']}:{str(piece['duration']['seconds']).rjust(2, '0')}")
+                  f"{piece['title'].ljust(title_just_length)} | " +
+                  f"{piece['duration']['minutes']}:{str(piece['duration']['seconds']).rjust(2, '0').ljust(6)}" +
+                  (f" | {piece['difficulty']}" if print_difficulty else ""))
         print(f"Total duration: {self.total_duration//60}m {self.total_duration%60}s")
 
     def _sort_by(self, list_of_pieces: PIANO_LIST_OF_PIECES, by_what: by, reverse: bool = False) -> PIANO_LIST_OF_PIECES:
