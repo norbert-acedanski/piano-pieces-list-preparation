@@ -75,7 +75,8 @@ if __name__ == "__main__":
     pieces_to_practice_weekly = original_piece_list.get_pieces(with_tags_or_tags=["christmas", "not good enough",
                                                                                   "fresh"])
     pieces_to_practice_weekly.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Pieces to practice weekly", sort=by.COMPOSER_PERFORMER, print_difficulty=True)
+        print_list_of_pieces(title="Pieces to practice weekly (christmas, not good enough and fresh pieces)",
+                             sort=by.COMPOSER_PERFORMER, print_difficulty=True)
 
     new_flat_left_pieces = [piece for piece in original_piece_list._piano_list
                             if set(piece["channel state"].get("new flat", [])) in [{"recorded"}, set()]]
