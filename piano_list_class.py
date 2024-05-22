@@ -176,7 +176,8 @@ class PianoList:
                   f"{piece['title'].ljust(title_just_length)} | " +
                   f"{piece['duration']['minutes']}:{str(piece['duration']['seconds']).rjust(2, '0').ljust(6)}" +
                   (f" | {piece['difficulty']}" if print_difficulty else ""))
-        print(f"Total duration: {self.total_duration//60}m {self.total_duration%60}s")
+        duration = f"{self.total_duration//60 - self.total_duration//3600*60}m {self.total_duration%60}s"
+        print(f"Total duration: {(f"{self.total_duration//3600}h " if self.total_duration//3600 else "") + duration}")
 
     def _sort_by(self, list_of_pieces: PIANO_LIST_OF_PIECES, by_what: by, reverse: bool = False) -> PIANO_LIST_OF_PIECES:
         if by_what == by.TITLE:
