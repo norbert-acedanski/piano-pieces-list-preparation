@@ -17,6 +17,9 @@ if __name__ == "__main__":
     pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=160).\
         print_list_of_pieces(title=f"Pieces for 2h 40m")
 
+    pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=15).\
+        print_list_of_pieces(title=f"Pieces for 15m")
+
     pieces_based_on_duration.select_random_subgroup_based_on_length().print_list_of_pieces("Pieces for max duration")
 
     soundtracks = original_piece_list.get_pieces(with_tags_and_tags="soundtrack", without_tags="not good enough")
