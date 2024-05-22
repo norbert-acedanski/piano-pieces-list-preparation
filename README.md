@@ -4,7 +4,7 @@
 Script allows me to quickly create random list of piano pieces based on some factors for my piano concerts.
 
 # Built With
-Python 3.9.10
+Python 3.12
 
 # Getting started
 
