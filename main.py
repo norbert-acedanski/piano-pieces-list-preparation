@@ -70,27 +70,27 @@ if __name__ == "__main__":
 
     not_good_enough_pieces = original_piece_list.get_pieces(with_tags_and_tags="not good enough")
     not_good_enough_pieces.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Not good enough pieces")
+        print_list_of_pieces(title="Not good enough pieces", print_difficulty=True)
 
     pieces_to_practice_weekly = original_piece_list.get_pieces(with_tags_or_tags=["christmas", "not good enough",
                                                                                   "fresh"])
     pieces_to_practice_weekly.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Pieces to practice weekly", sort=by.COMPOSER_PERFORMER)
+        print_list_of_pieces(title="Pieces to practice weekly", sort=by.COMPOSER_PERFORMER, print_difficulty=True)
 
     new_flat_left_pieces = [piece for piece in original_piece_list._piano_list
                             if set(piece["channel state"].get("new flat", [])) in [{"recorded"}, set()]]
     pieces_from_new_flat_left_to_upload = PianoList(new_flat_left_pieces)
     pieces_from_new_flat_left_to_upload.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Pieces left to upload from the new flat")
+        print_list_of_pieces(title="Pieces left to upload from the new flat", print_difficulty=True)
 
     pieces_not_recorded = [piece for piece in original_piece_list._piano_list
                            if "recorded" not in set(piece["channel state"].get("old flat", []))
                            and "recorded" not in set(piece["channel state"]["new flat"])]
     pieces_not_yet_recorded = PianoList(pieces_not_recorded)
     pieces_not_yet_recorded.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title="Pieces not yet recorded")
+        print_list_of_pieces(title="Pieces not yet recorded", print_difficulty=True)
 
     fixed_difficulty_pieces = original_piece_list.get_pieces(without_tags=["christmas", "not good enough"],
                                                              with_difficulty=(difficulty := [1, 2]))
     fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title=f"Pieces with {difficulty=}")
+        print_list_of_pieces(title=f"Pieces with {difficulty=}", print_difficulty=True)
