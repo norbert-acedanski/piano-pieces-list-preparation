@@ -63,7 +63,7 @@
   "duration": {"minutes": 2, "seconds": 15}, "tags": ["soundtrack", "for children", "sad"], "difficulty": 2,
   "from": {"movie": "Ice Age"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "C418", "title": "Dry Hands",
-  "duration": {"minutes": 1, "seconds": 29}, "tags": ["soundtrack", "for children"], "difficulty": 1,
+  "duration": {"minutes": 1, "seconds": 13}, "tags": ["soundtrack", "for children"], "difficulty": 1,
   "from": {"game": "Minecraft"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "C418", "title": "Wet Hands",
   "duration": {"minutes": 0, "seconds": 54}, "tags": ["soundtrack", "for children"], "difficulty": 1,
