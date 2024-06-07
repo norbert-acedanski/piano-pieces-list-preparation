@@ -95,3 +95,9 @@ if __name__ == "__main__":
                                                              with_difficulty=(difficulty := [1, 2]))
     fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title=f"Pieces with {difficulty=}", print_difficulty=True)
+
+    for diff in range(3, 6):
+        fixed_difficulty_pieces = original_piece_list.get_pieces(without_tags=["christmas", "not good enough"],
+                                                                 with_difficulty=(difficulty := diff))
+        fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
+            print_list_of_pieces(title=f"Pieces with {difficulty=}", print_difficulty=True)
