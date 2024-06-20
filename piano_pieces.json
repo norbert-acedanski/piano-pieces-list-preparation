@@ -188,5 +188,8 @@
   "channel state": {"new flat": []}},
  {"composer/performer": "Bobby Helms", "title": "Jingle Bell Rock",
   "duration":  {"minutes": 2, "seconds": 5}, "tags": ["song", "christmas", "happy", "energetic"], "difficulty": 2,
+  "channel state": {"new flat": []}},
+ {"composer/performer": "Imagine Dragons", "title": "Thunder",
+  "duration":  {"minutes": 3, "seconds": 3}, "tags": ["song", "happy", "energetic"], "difficulty": 2,
   "channel state": {"new flat": []}}
 ]}
