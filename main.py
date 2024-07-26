@@ -91,12 +91,7 @@ if __name__ == "__main__":
     pieces_not_yet_recorded.select_random_subgroup_based_on_length().\
         print_list_of_pieces(title="Pieces not yet recorded", print_difficulty=True)
 
-    fixed_difficulty_pieces = original_piece_list.get_pieces(without_tags=["christmas", "not good enough"],
-                                                             with_difficulty=(difficulty := [1, 2]))
-    fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
-        print_list_of_pieces(title=f"Pieces with {difficulty=}", print_difficulty=True)
-
-    for diff in range(3, 6):
+    for diff in range(1, 6):
         fixed_difficulty_pieces = original_piece_list.get_pieces(without_tags=["christmas", "not good enough"],
                                                                  with_difficulty=(difficulty := diff))
         fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
