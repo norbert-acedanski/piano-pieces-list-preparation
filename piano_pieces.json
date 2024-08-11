@@ -53,7 +53,7 @@
   "from": {"book": "The Hobbit", "movie": "The Hobbit"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Petr Skoumal", "title": "A Je To!",
   "duration": {"minutes": 1, "seconds": 56}, "tags": ["soundtrack", "for children", "energetic", "happy"], "difficulty": 2,
-  "from": {"tv series": "Pat & Mat"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded"]}},
+  "from": {"tv series": "Pat & Mat"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded", "uploaded"]}},
  {"composer/performer": "C418", "title": "Sweden",
   "duration": {"minutes": 2, "seconds": 4}, "tags": ["soundtrack", "for children"], "difficulty": 1,
   "from": {"game": "Minecraft"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
