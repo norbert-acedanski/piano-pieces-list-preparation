@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import random
 from typing import List, Dict, Union, Optional, Tuple, Set
 
@@ -20,6 +21,13 @@ class PianoList:
         self.tags = sorted(self.get_all_tags())
         self.total_duration = self.get_total_duration()
         self.number_of_pieces = len(self._piano_list)
+
+    def __add__(self, other) -> PianoList:
+        new_piano_list = copy.deepcopy(self._piano_list)
+        for piano_piece in copy.deepcopy(other._piano_list):
+            if piano_piece not in new_piano_list:
+                new_piano_list.append(piano_piece)
+        return PianoList(piano_list=new_piano_list)
 
     def get_all_composers(self) -> List[str]:
         return list(set(piece["composer/performer"] for piece in self._piano_list))
