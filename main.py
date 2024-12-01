@@ -96,3 +96,12 @@ if __name__ == "__main__":
                                                                  with_difficulty=(difficulty := diff))
         fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
             print_list_of_pieces(title=f"Pieces with {difficulty=}", print_difficulty=True)
+
+    pieces_not_recorded_in_the_new_flat = [piece for piece in original_piece_list._piano_list
+                                           if "recorded" not in set(piece["channel state"]["new flat"])]
+    pieces_not_yet_recorded_in_the_new_flat = PianoList(pieces_not_recorded_in_the_new_flat)
+    for diff in range(1, 6):
+        fixed_difficulty_pieces = pieces_not_yet_recorded_in_the_new_flat.get_pieces(without_tags=["christmas", "not good enough"],
+                                                                                     with_difficulty=(difficulty := diff))
+        fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
+            print_list_of_pieces(title=f"Pieces with {difficulty=} not recorded in the new flat", print_difficulty=True)
