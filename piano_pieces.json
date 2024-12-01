@@ -56,7 +56,7 @@
   "from": {"tv series": "Pat & Mat"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded", "uploaded"]}},
  {"composer/performer": "C418", "title": "Sweden",
   "duration": {"minutes": 2, "seconds": 4}, "tags": ["soundtrack", "for children"], "difficulty": 1,
-  "from": {"game": "Minecraft"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded"]}},
+  "from": {"game": "Minecraft"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": ["recorded", "uploaded"]}},
  {"composer/performer": "Lucyfer/Bob Dylan", "title": "Knockin' on Heaven's door",
   "duration": {"minutes": 3, "seconds": 11}, "tags": ["soundtrack", "song", "sad"], "difficulty": 2,
   "from": {"tv series": "Lucyfer"}, "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
