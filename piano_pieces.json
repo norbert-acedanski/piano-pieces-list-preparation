@@ -191,5 +191,8 @@
   "channel state": {"new flat": []}},
  {"composer/performer": "Imagine Dragons", "title": "Thunder",
   "duration":  {"minutes": 3, "seconds": 3}, "tags": ["song", "happy", "energetic"], "difficulty": 2,
+  "channel state": {"new flat": []}},
+ {"composer/performer": "Beyoncé", "title": "If I Were a Boy",
+  "duration":  {"minutes": 3, "seconds": 55}, "tags": ["song", "happy", "energetic"], "difficulty": 2,
   "channel state": {"new flat": []}}
 ]}
