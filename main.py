@@ -20,6 +20,10 @@ if __name__ == "__main__":
     pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=15).\
         print_list_of_pieces(title=f"Pieces for 15m")
 
+    pieces_based_on_duration.get_pieces(with_titles=["The Fairly OddParents Theme", "Misty Mountains", "Rick & Morty Theme", "Kayla", "Half-Wit", "Wet Hands",
+                                                     "Dry Hands", "Sweden", "Born a stranger", "Checking out the cave", "Me and Julia", "If I Were a Boy"]).\
+        select_random_subgroup_based_on_length().print_list_of_pieces(title="Pieces to play each time")
+
     pieces_based_on_duration.select_random_subgroup_based_on_length().print_list_of_pieces("Pieces for max duration")
 
     soundtracks = original_piece_list.get_pieces(with_tags_and_tags="soundtrack", without_tags="not good enough")
@@ -101,7 +105,6 @@ if __name__ == "__main__":
                                            if "recorded" not in set(piece["channel state"]["new flat"])]
     pieces_not_yet_recorded_in_the_new_flat = PianoList(pieces_not_recorded_in_the_new_flat)
     for diff in range(1, 6):
-        fixed_difficulty_pieces = pieces_not_yet_recorded_in_the_new_flat.get_pieces(without_tags=["christmas", "not good enough"],
-                                                                                     with_difficulty=(difficulty := diff))
+        fixed_difficulty_pieces = pieces_not_yet_recorded_in_the_new_flat.get_pieces(with_difficulty=(difficulty := diff))
         fixed_difficulty_pieces.select_random_subgroup_based_on_length().\
             print_list_of_pieces(title=f"Pieces with {difficulty=} not recorded in the new flat", print_difficulty=True)
