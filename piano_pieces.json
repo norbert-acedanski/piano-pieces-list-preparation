@@ -194,5 +194,8 @@
   "channel state": {"new flat": []}},
  {"composer/performer": "Beyoncé", "title": "If I Were a Boy",
   "duration":  {"minutes": 3, "seconds": 55}, "tags": ["song", "happy", "energetic"], "difficulty": 2,
-  "channel state": {"new flat": []}}
+  "channel state": {"new flat": []}},
+ {"composer/performer": "Ludovico Einaudi", "title": "Una Mattina",
+  "duration": {"minutes": 3, "seconds": 15}, "tags": ["classical", "sad", "romantic", "soundtrack"], "difficulty": 2,
+  "channel state": {"old flat": [], "new flat": []}}
 ]}
