@@ -11,11 +11,11 @@ if __name__ == "__main__":
     original_piece_list.select_random_subgroup_based_on_length().print_list_of_pieces(title="All pieces")
 
     pieces_based_on_duration = original_piece_list.get_pieces(without_tags=["not good enough", "christmas"])
-    pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=110).\
-        print_list_of_pieces(title=f"Pieces for 1h 50m")
+    pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=105).\
+        print_list_of_pieces(title=f"Pieces for 1h 45m")
 
-    pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=160).\
-        print_list_of_pieces(title=f"Pieces for 2h 40m")
+    pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=150).\
+        print_list_of_pieces(title=f"Pieces for 2h 30m")
 
     pieces_based_on_duration.select_random_subgroup_based_on_duration(minimum_duration=15).\
         print_list_of_pieces(title=f"Pieces for 15m")
