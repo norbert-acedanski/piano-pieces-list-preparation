@@ -21,7 +21,8 @@ if __name__ == "__main__":
         print_list_of_pieces(title=f"Pieces for 15m")
 
     pieces_based_on_duration.get_pieces(with_titles=["The Fairly OddParents Theme", "Misty Mountains", "Rick & Morty Theme", "Kayla", "Half-Wit", "Wet Hands",
-                                                     "Dry Hands", "Sweden", "Born a stranger", "Checking out the cave", "Me and Julia", "Una Mattina"]).\
+                                                     "Dry Hands", "Sweden", "Born a stranger", "Checking out the cave", "Me and Julia",
+                                                     "Moonlight Sonata 1st movement"]).\
         select_random_subgroup_based_on_length().print_list_of_pieces(title="Pieces to play each time")
 
     pieces_based_on_duration.select_random_subgroup_based_on_length().print_list_of_pieces("Pieces for max duration")
