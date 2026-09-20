@@ -151,7 +151,7 @@
   "duration": {"minutes": 2, "seconds": 38}, "tags": ["classical", "sad"], "difficulty": 2,
   "channel state": {"old flat": ["recorded", "uploaded"], "new flat": []}},
  {"composer/performer": "Beethoven", "title": "Moonlight Sonata 1st movement",
-  "duration": {"minutes": 5, "seconds": 43}, "tags": ["classical", "sad", "not good enough"], "difficulty": 3,
+  "duration": {"minutes": 5, "seconds": 43}, "tags": ["classical", "sad"], "difficulty": 3,
   "channel state": {"old flat": [], "new flat": []}},
  {"composer/performer": "Debussy", "title": "Rêverie",
   "duration": {"minutes": 4, "seconds": 39}, "tags": ["classical", "sad"], "difficulty": 3,
